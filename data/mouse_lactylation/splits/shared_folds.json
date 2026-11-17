@@ -1,0 +1,88 @@
+{
+  "status": "complete",
+  "source_identity_fingerprint": "2700be3a1919240a41ef73897520addcd9951e5bce3a0c5dbdbd2be6557c2c65",
+  "retained_rows": 2838,
+  "retained_proteins": 492,
+  "outer_folds": 10,
+  "folds": [
+    {
+      "fold": 1,
+      "train_sites": 2619,
+      "validation_sites": 219,
+      "monitor_sites": 517,
+      "validation_positive": 141
+    },
+    {
+      "fold": 2,
+      "train_sites": 2307,
+      "validation_sites": 531,
+      "monitor_sites": 503,
+      "validation_positive": 205
+    },
+    {
+      "fold": 3,
+      "train_sites": 2549,
+      "validation_sites": 289,
+      "monitor_sites": 673,
+      "validation_positive": 123
+    },
+    {
+      "fold": 4,
+      "train_sites": 2567,
+      "validation_sites": 271,
+      "monitor_sites": 750,
+      "validation_positive": 116
+    },
+    {
+      "fold": 5,
+      "train_sites": 2507,
+      "validation_sites": 331,
+      "monitor_sites": 474,
+      "validation_positive": 211
+    },
+    {
+      "fold": 6,
+      "train_sites": 2629,
+      "validation_sites": 209,
+      "monitor_sites": 346,
+      "validation_positive": 113
+    },
+    {
+      "fold": 7,
+      "train_sites": 2665,
+      "validation_sites": 173,
+      "monitor_sites": 571,
+      "validation_positive": 91
+    },
+    {
+      "fold": 8,
+      "train_sites": 2537,
+      "validation_sites": 301,
+      "monitor_sites": 503,
+      "validation_positive": 129
+    },
+    {
+      "fold": 9,
+      "train_sites": 2560,
+      "validation_sites": 278,
+      "monitor_sites": 445,
+      "validation_positive": 146
+    },
+    {
+      "fold": 10,
+      "train_sites": 2602,
+      "validation_sites": 236,
+      "monitor_sites": 422,
+      "validation_positive": 144
+    }
+  ],
+  "provided_train_test_split_retained": true,
+  "holdout_protein_overlap": 318,
+  "external_overlap_proteins_removed": [],
+  "protocol": {
+    "outer": "StratifiedGroupKFold within supplied training data",
+    "inner": "Grouped monitoring within outer training partition",
+    "holdout": "Supplied test CSV; protein overlap explicitly retained, so not protein-independent evaluation",
+    "independent_sets_used_for_training": false
+  }
+}

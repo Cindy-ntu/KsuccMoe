@@ -1,0 +1,55 @@
+{
+  "validated_site_rows": 16536,
+  "all_centers_are_lysine": true,
+  "all_windows_match_archived_full_sequences": true,
+  "all_site_keys_unique_within_split": true,
+  "succinylation_train_test_shared_accessions": 0,
+  "ind1_is_subset_of_ind2": true,
+  "ind1_ind2_shared_positive_sites": 253,
+  "mouse_train_test_shared_accessions": 318,
+  "mouse_train_test_shared_sites": 0,
+  "both_saved_ten_fold_protocols_match_training_order_and_labels": true,
+  "all_outer_and_monitor_partitions_are_protein_grouped": true,
+  "counts": [
+    {
+      "dataset": "succinylation",
+      "split": "train",
+      "sites": 9269,
+      "positive": 4743,
+      "negative": 4526,
+      "proteins": 2191
+    },
+    {
+      "dataset": "succinylation",
+      "split": "ind1",
+      "sites": 495,
+      "positive": 253,
+      "negative": 242,
+      "proteins": 123
+    },
+    {
+      "dataset": "succinylation",
+      "split": "ind2",
+      "sites": 3224,
+      "positive": 253,
+      "negative": 2971,
+      "proteins": 123
+    },
+    {
+      "dataset": "mouse_lactylation",
+      "split": "train",
+      "sites": 2838,
+      "positive": 1419,
+      "negative": 1419,
+      "proteins": 492
+    },
+    {
+      "dataset": "mouse_lactylation",
+      "split": "test",
+      "sites": 710,
+      "positive": 355,
+      "negative": 355,
+      "proteins": 331
+    }
+  ]
+}

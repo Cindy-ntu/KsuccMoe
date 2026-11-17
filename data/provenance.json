@@ -1,0 +1,58 @@
+{
+  "release_date": "2026-11-17",
+  "datasets": "Exact retained study datasets, with no relabeling or resplitting",
+  "site_table_derivation": {
+    "succinylation": "Identity/order from the saved final protocol for Train and PSSM input identity arrays (first unique accession-position-label occurrence) for Ind1/Ind2; windows joined by split and site identity to the archived sequence mapping.",
+    "mouse_lactylation": "Identity, labels, order and recovered 33-residue windows from the saved mouse experiment inputs; original 31-residue windows retained."
+  },
+  "copied_files": [
+    {
+      "path": "data/succinylation/full_sequences.fasta.gz",
+      "source_filename": "unique_full_sequences.fasta",
+      "source_sha256": "f215032549c9fb9993b1f0259a4378903f236554a6365eae2c3fb0185198f479",
+      "transformation": "gzip compression only"
+    },
+    {
+      "path": "data/succinylation/sequence_sources.csv.gz",
+      "source_filename": "unique_manifest.csv",
+      "source_sha256": "f4db07433df86bc18c3205bd5ba519a8ad7028f9b6dcc1360c08dca8fb9ab3c5",
+      "transformation": "gzip compression only"
+    },
+    {
+      "path": "data/succinylation/splits/shared_folds.npz",
+      "source_filename": "moe_bce_rank010_deduplicated.npz",
+      "source_sha256": "8d7ff3c53a7e4a23e099d65981f1d9d2d9d812ee273572cb92056d60e6715be3",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/mouse_lactylation/full_sequences.fasta.gz",
+      "source_filename": "full_sequences.fasta",
+      "source_sha256": "15ac856c3255f645cc0c5cbb46de51210f79a46ed545010e3c5f78f9204743d1",
+      "transformation": "gzip compression only"
+    },
+    {
+      "path": "data/mouse_lactylation/splits/shared_folds.npz",
+      "source_filename": "shared_folds.npz",
+      "source_sha256": "2a40fe31cec0bd09d782d3c613682afd44f90581e53412e20af1304c5e42e70d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/mouse_lactylation/splits/shared_folds.json",
+      "source_filename": "shared_folds.json",
+      "source_sha256": "17a34280a9244a4d1efcb16d7760fd32bd9b8a53917e27e02b92b70dd438af3a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/mouse_lactylation/source_windows/train_31.csv.gz",
+      "source_filename": "mouse_train.csv",
+      "source_sha256": "e04101cbb1319cfd06e0b6d77488d18a15c1d7ecb70607231cb9253822806c1d",
+      "transformation": "gzip compression only"
+    },
+    {
+      "path": "data/mouse_lactylation/source_windows/test_31.csv.gz",
+      "source_filename": "mouse_test.csv",
+      "source_sha256": "ad70f4e0d655ecdf87d6dda2317063ddcc58090542bda77f60d29bddd1d92eba",
+      "transformation": "gzip compression only"
+    }
+  ]
+}

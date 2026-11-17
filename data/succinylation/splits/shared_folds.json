@@ -1,0 +1,138 @@
+{
+  "status": "complete",
+  "seed": 20260717,
+  "outer_folds": 10,
+  "inner_folds": 5,
+  "source_identity_fingerprint": "3c2e5bc153759996711b79df0d66162e7e93cc1fd13cdd2213e90cc4cfc8ad78",
+  "source_train_rows": 9499,
+  "source_train_proteins": 2193,
+  "duplicate_rows_removed": 221,
+  "external_overlap_proteins_removed": [
+    "Q91W43",
+    "Q9D379"
+  ],
+  "external_overlap_unique_rows_removed": 9,
+  "retained_rows": 9269,
+  "retained_positive": 4743,
+  "retained_negative": 4526,
+  "retained_proteins": 2191,
+  "folds": [
+    {
+      "fold": 1,
+      "outer_train_rows": 8189,
+      "outer_validation_rows": 1080,
+      "outer_train_proteins": 1954,
+      "outer_validation_proteins": 237,
+      "selection_train_rows": 6483,
+      "monitor_rows": 1706,
+      "outer_validation_positive": 570,
+      "outer_validation_negative": 510
+    },
+    {
+      "fold": 2,
+      "outer_train_rows": 8273,
+      "outer_validation_rows": 996,
+      "outer_train_proteins": 1961,
+      "outer_validation_proteins": 230,
+      "selection_train_rows": 6597,
+      "monitor_rows": 1676,
+      "outer_validation_positive": 466,
+      "outer_validation_negative": 530
+    },
+    {
+      "fold": 3,
+      "outer_train_rows": 8482,
+      "outer_validation_rows": 787,
+      "outer_train_proteins": 1980,
+      "outer_validation_proteins": 211,
+      "selection_train_rows": 6844,
+      "monitor_rows": 1638,
+      "outer_validation_positive": 455,
+      "outer_validation_negative": 332
+    },
+    {
+      "fold": 4,
+      "outer_train_rows": 8332,
+      "outer_validation_rows": 937,
+      "outer_train_proteins": 1986,
+      "outer_validation_proteins": 205,
+      "selection_train_rows": 6565,
+      "monitor_rows": 1767,
+      "outer_validation_positive": 452,
+      "outer_validation_negative": 485
+    },
+    {
+      "fold": 5,
+      "outer_train_rows": 8423,
+      "outer_validation_rows": 846,
+      "outer_train_proteins": 1968,
+      "outer_validation_proteins": 223,
+      "selection_train_rows": 6665,
+      "monitor_rows": 1758,
+      "outer_validation_positive": 442,
+      "outer_validation_negative": 404
+    },
+    {
+      "fold": 6,
+      "outer_train_rows": 8238,
+      "outer_validation_rows": 1031,
+      "outer_train_proteins": 1964,
+      "outer_validation_proteins": 227,
+      "selection_train_rows": 6679,
+      "monitor_rows": 1559,
+      "outer_validation_positive": 478,
+      "outer_validation_negative": 553
+    },
+    {
+      "fold": 7,
+      "outer_train_rows": 8457,
+      "outer_validation_rows": 812,
+      "outer_train_proteins": 1979,
+      "outer_validation_proteins": 212,
+      "selection_train_rows": 6851,
+      "monitor_rows": 1606,
+      "outer_validation_positive": 422,
+      "outer_validation_negative": 390
+    },
+    {
+      "fold": 8,
+      "outer_train_rows": 8392,
+      "outer_validation_rows": 877,
+      "outer_train_proteins": 1970,
+      "outer_validation_proteins": 221,
+      "selection_train_rows": 6778,
+      "monitor_rows": 1614,
+      "outer_validation_positive": 439,
+      "outer_validation_negative": 438
+    },
+    {
+      "fold": 9,
+      "outer_train_rows": 8328,
+      "outer_validation_rows": 941,
+      "outer_train_proteins": 1975,
+      "outer_validation_proteins": 216,
+      "selection_train_rows": 6512,
+      "monitor_rows": 1816,
+      "outer_validation_positive": 516,
+      "outer_validation_negative": 425
+    },
+    {
+      "fold": 10,
+      "outer_train_rows": 8307,
+      "outer_validation_rows": 962,
+      "outer_train_proteins": 1982,
+      "outer_validation_proteins": 209,
+      "selection_train_rows": 6671,
+      "monitor_rows": 1636,
+      "outer_validation_positive": 503,
+      "outer_validation_negative": 459
+    }
+  ],
+  "protocol": {
+    "deduplication": "first unique (UniProt, position, label) row",
+    "external_overlap": "remove every training protein present in Ind-I or Ind-II",
+    "outer": "shared StratifiedGroupKFold by UniProt",
+    "inner": "shared grouped monitor split inside each outer training fold",
+    "independent_sets_used_for_training": false
+  }
+}

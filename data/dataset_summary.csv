@@ -1,0 +1,6 @@
+dataset,split,sites,positive,negative,proteins
+succinylation,train,9269,4743,4526,2191
+succinylation,ind1,495,253,242,123
+succinylation,ind2,3224,253,2971,123
+mouse_lactylation,train,2838,1419,1419,492
+mouse_lactylation,test,710,355,355,331

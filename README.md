@@ -96,4 +96,3 @@ python tools/verify_datasets.py
 The verifier uses the Python standard library for checksums, counts, site identities and sequence windows. If NumPy is installed, it also checks the original saved fold files against the released membership tables. `SHA256SUMS` covers every release file except itself.
 
 This release contains the sequence datasets and partition definitions. Pretrained model weights, derived embedding tensors, structure caches and training checkpoints are not included.
-
